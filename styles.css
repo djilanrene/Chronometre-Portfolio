@@ -1,0 +1,83 @@
+/* pour initialiser les marges des boîtes de contenues */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* par défaut content-box => le width et le height ne concernent que le contenu donc si on ajoute border et padding, leurs valeurs s'ajoutent par dessus celui du content ce qui augmente celle du conteneur. border-box englobe le contenu, le padding et le border => width = padding + content + border */
+}
+
+body {
+  background-color: #94d2d2;
+  min-height: 100vh; /* indispensable sinon le justify-content:center ne sera pas pris en compte. pour que la hauteur de l'interface ne soit pas en desso */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px; /* pour avoir un responsive à l'infini et éviterr que le body déscende en dessous de 320px qui est la taille min d'un écran de smartphone */
+}
+
+/* si on n'avait pas utilisé de flexbox sur le body pour centrer, on devrait faire sur .frame un width de 94% avec un margin de 3%. 94 car 94 + 3 + 3 = 100% pour éviter le débordement */
+
+.frame {
+  width: 100%; /* pour que l'interface prenne toute la place sur l'écran. Si en dessous, l'interface sera trop petit ce qui va écraser l'affichage de certains éléments. utile pour le responsive */
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem; /* rem = 1 x 16px qui est la taille de l'élément racine html. si on utilise em => 1 x le font-size de l'élément lui-même. s'il hérite de celui du parent avec inherit (par défaut 16px), alors le em est relatif à la taille du conteneur parent, peut décaler les choses si jamais la taille de la police de ce conteneur change */
+  overflow: hidden;
+  gap: 0.1rem; /* en rem pour le responsive */
+  margin: 3%; /* en % pour le responsive */
+  max-width: 30rem; /* pour limiter la taille maximum de l'interface pour ne pas être trop grand */
+}
+
+.screen {
+  border: 1px solid black;
+  width: 100%; /* pour prendre toute la largeur de la frame */
+  height: 3em; /* une taille fixe parce que notre élément est centré sur la verticale et quee la hauteur de l'écran n'impacte pas l'affichage des boutons */
+  border-radius: 15px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  font-weight: 400;
+}
+
+.screen span {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: xx-large;
+  padding: 0.3em;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; /* pour disposer les boutons de tel sorte à à les pousser sur les borrds de la frame btn et gérer proportionnellement le gap */
+  flex-direction: row;
+  gap: 0.5rem;
+  border: 0;
+  height: auto; /* pour correspondre à celle des boutons */
+  width: 100%;
+}
+
+button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0.5em; /* pour que les marges internes du bouton s'adaptent à la taille de la police */
+  margin: 0;
+  width: 100%;
+  font-size: larger; /* medium = 16px. large ou small... incrémente ou décrémente la taille en fonction des spécificités du navigateur (soit 2px par défaut) */
+  font-weight: 500;
+  border-radius: 10px;
+  transition: ease 0.1s;
+  background-color: rgb(148, 210, 210);
+  border: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.03);
+  border: 1px solid black;
+}
