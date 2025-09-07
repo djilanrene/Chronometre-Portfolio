@@ -26,11 +26,6 @@ Ce projet est une application web de chronomètre qui permet de mesurer le temps
 
 Ce chronomètre a été développé comme un exercice pratique pour maîtriser les bases de la manipulation du DOM et de la gestion des événements en JavaScript.
 
-*(Conseil : Vous pouvez convertir votre vidéo de démo en GIF avec un outil en ligne comme Ezgif et l'insérer ici en remplaçant le lien `demo.gif`)*
-
-![GIF de démonstration du projet](./demo.gif)
-*Démonstration des fonctionnalités de démarrage, d'arrêt et de réinitialisation du chronomètre.*
-
 ---
 
 ## ✨ Fonctionnalités
@@ -124,4 +119,5 @@ La solution a consisté à implémenter une gestion d'état simple. Avant de cr�
 ## 📜 Licence
 
 Ce projet est distribué sous la licence MIT.
+
 
