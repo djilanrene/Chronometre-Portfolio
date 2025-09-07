@@ -1,4 +1,4 @@
-# Chronometre
+# Chronomètre Javascript
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
 
@@ -124,3 +124,4 @@ La solution a consisté à implémenter une gestion d'état simple. Avant de cr�
 ## 📜 Licence
 
 Ce projet est distribué sous la licence MIT.
+
