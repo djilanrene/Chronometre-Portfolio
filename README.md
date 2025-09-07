@@ -112,12 +112,13 @@ La solution a consisté à implémenter une gestion d'état simple. Avant de cr�
 ## 👤 Auteur
 
 *   **René DJILAN**
-*   GitHub : [@djilanrene](https://github.com/djilanrene)
+*   LinkedIn : [@djilanrene](linkedin.com/in/djilanrene/)
 
 ---
 
 ## 📜 Licence
 
 Ce projet est distribué sous la licence MIT.
+
 
 
