@@ -60,12 +60,12 @@ Le projet est entièrement statique et ne nécessite aucune installation de dép
 
 1.  **Clonez le dépôt :**
     ```bash
-    git clone https://github.com/djilanrene/Chronometre-Portfolio.git
+    git clone https://github.com/djilanrene/chrono-js.git
     ```
 
 2.  **Accédez au dossier du projet :**
     ```bash
-    cd Chronometre-Portfolio
+    cd chrono-js
     ```
 
 3.  **Ouvrez le fichier `index.html` :**
@@ -119,6 +119,7 @@ La solution a consisté à implémenter une gestion d'état simple. Avant de cr�
 ## 📜 Licence
 
 Ce projet est distribué sous la licence MIT.
+
 
 
 
